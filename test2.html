@@ -38,7 +38,8 @@
     if (userAnswerWord2===word2Translation){
     correctAnswerCount++
    }
-if (correctAnswerCount/wordsCount*100>50){
+const userCorrectPercent=correctAnswerCount/wordsCount*100
+   if (userCorrectPercent>50){
     alert(finishMessage0)}   
 else{
     alert(finishMessage1)}  
