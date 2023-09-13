@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script> 
+    const word0='Wassup'
+    const word1='Bye'
+    const word2='Programer'
+
+    const word0Translation='Здарова'
+    const word1Translation='Покеда'
+    const word2Translation='Программист'
+
+    const finishMessage0='Молодец, хороший результат!'
+    const finishMessage1='Старайся лучше!'
+    let correctAnswerCount=0
+    const wordsCount=3
+
+    const userAnswerWord0=prompt(word0)
+    alert(userAnswerWord0===word0Translation)
+   if (userAnswerWord0===word0Translation){
+    correctAnswerCount++
+   }
+    
+    const userAnswerWord1=prompt(word1)
+    alert(userAnswerWord1===word1Translation)
+    if (userAnswerWord1===word1Translation){
+    correctAnswerCount++
+   }
+    
+    const userAnswerWord2=prompt(word2)
+    alert(userAnswerWord2===word2Translation)
+    if (userAnswerWord2===word2Translation){
+    correctAnswerCount++
+   }
+if (correctAnswerCount/wordsCount*100>50){
+    alert(finishMessage0)}   
+else{
+    alert(finishMessage1)}  
+</script>
+    
+</body>
+</html>
