@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <script> 
-let balance=110
-// ----------------------------------------
-document.write('Start','<br>')
-let price=window.prompt('Введите цену товара')
-if (balance>=price){
-    document.write('Product complid','<br>',
-    'На счету осталось ',balance-price,' Деняк')
-}else{
-    document.write('Not complid, not many in balance','<br>','На счету осталось ',balance,' Деняк')
-}
 
-document.write('<br>', 'Dosviduli')
-   
+<body>
+    <script>
+        let balance = 110
+        // ----------------------------------------
+        document.write('Start', '<br>')
+        let price = window.prompt('Введите цену товара')
+        if (balance >= price) {
+            document.write('Product complid', '<br>',
+                'На счету осталось ', balance - price, ' Деняк')
+        } else {
+            document.write('Not complid, not many in balance', '<br>', 'На счету осталось ', balance, ' Деняк')
+        }
+
+        document.write('<br>', 'Dosviduli')
+
     </script>
 </body>
+
 </html>
