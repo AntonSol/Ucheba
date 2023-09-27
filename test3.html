@@ -10,18 +10,35 @@
 
 <body>
     <script>
-        let balance = 110
+        const balance = 110
         // ----------------------------------------
-        document.write('Start', '<br>')
-        let price = window.prompt('Введите цену товара')
-        if (balance >= price) {
+        let NoNamberPrice0 = window.prompt('Введите цену первого товара')
+        let price0=Number(NoNamberPrice0)
+        if (balance >= price0) {
+            document.write('Норм цена, можешь шикануть еще,щегол', '<br>',
+                'На счету осталось ', balance -price0, ' Деняк', '<br>')
+        }else {
+            document.write('Ну ты борщанул, умерь аппетиты', '<br>', 'На счету осталось ', balance, ' Деняк')
+        }
+        let NoNamberPrice1 = window.prompt('Введите цену второго товара')
+        let price1=Number(NoNamberPrice1)
+        if (balance >= price1) {
+            document.write('Норм цена, можешь шикануть еще,щегол', '<br>',
+                'На счету осталось ', balance -price0-price1, ' Деняк', '<br>')
+        }
+        let NoNamberPrice2 = window.prompt('Введите цену третьего товара')
+        let price2=Number(NoNamberPrice2)
+        if (balance >= price2) {
+            document.write('Норм цена, можешь шикануть еще,щегол', '<br>',
+                'На счету осталось ', balance -price0-price1-price2, ' Деняк', '<br>')
+        }
+        if (balance >= price0+price1+price2) {
             document.write('Product complid', '<br>',
-                'На счету осталось ', balance - price, ' Деняк')
+                'На счету осталось ', balance -price0-price1-price2, ' Деняк')
         } else {
             document.write('Not complid, not many in balance', '<br>', 'На счету осталось ', balance, ' Деняк')
         }
 
-        document.write('<br>', 'Dosviduli')
 
     </script>
 </body>
