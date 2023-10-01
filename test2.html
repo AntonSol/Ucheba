@@ -8,19 +8,20 @@
 </head>
 <body>
 <script> 
-    const word0={
+    const words={
+        word0:{
         original:'Wassup',
         translation:'Здарова',
-    }
-    const word1={
+    },
+        word1:{
         original:'Bye',
         translation:'Покеда',
-    }
-    const word2={
+    },
+        word2:{
         original:'Programer',
         translation:'Программист',
+    },
     }
-
 const finishMessage={
     coolMessage:'Молодец, хороший результат!',
     NoCoolMessage:'Старайся лучше!',
@@ -31,21 +32,21 @@ const settings={
     let correctAnswerCount=0
     const wordsCount=3
 
-    const userAnswerWord0=prompt(word0.original)
-    alert(userAnswerWord0===word0.translation)
-   if (userAnswerWord0===word0.translation){
+    const userAnswerWord0=prompt(words.word0.original)
+    alert(userAnswerWord0===words.word0.translation)
+   if (userAnswerWord0===words.word0.translation){
     correctAnswerCount++
    }
     
-    const userAnswerWord1=prompt(word1.original)
-    alert(userAnswerWord1===word1.translation)
-    if (userAnswerWord1===word1.translation){
+    const userAnswerWord1=prompt(words.word1.original)
+    alert(userAnswerWord1===words.word1.translation)
+    if (userAnswerWord1===words.word1.translation){
     correctAnswerCount++
    }
     
-    const userAnswerWord2=prompt(word2.original)
-    alert(userAnswerWord2===word2.translation)
-    if (userAnswerWord2===word2.translation){
+    const userAnswerWord2=prompt(words.word2.original)
+    alert(userAnswerWord2===words.word2.translation)
+    if (userAnswerWord2===words.word2.translation){
     correctAnswerCount++
    }
 const userCorrectPercent=correctAnswerCount/wordsCount*100
