@@ -10,53 +10,53 @@
 
 <body>
     <script>
-        const words = {
-            word0: {
-                original: 'Wassup',
-                translation: 'Здарова',
-            },
-            word1: {
-                original: 'Bye',
-                translation: 'Покеда',
-            },
-            word2: {
-                original: 'Programer',
-                translation: 'Программист',
-            },
-        }
-        const finishMessage = {
-            coolMessage: 'Молодец, хороший результат!',
-            NoCoolMessage: 'Старайся лучше!',
-        }
+            const words = [
+                {
+                    original: 'Wassup',
+                    translation: 'Здарова',
+                },
+                {
+                    original: 'Bye',
+                    translation: 'Покеда',
+                },
+                {
+                    original: 'Programer',
+                    translation: 'Программист',
+                },
+            ]
+        const finishMessage = [
+            {coolMessage: 'Молодец, хороший результат!',
+            NoCoolMessage: 'Старайся лучше!',}
+        ]
         const settings = {
             correctMinPecent: 50,
         }
         let correctAnswerCount = 0
         const wordsCount = 3
 
-        const userAnswerWord0 = prompt(words.word0.original)
-        alert(userAnswerWord0 === words.word0.translation)
-        if (userAnswerWord0 === words.word0.translation) {
+        const userAnswerWord0 = prompt(words[0].original)
+        alert(userAnswerWord0 === words[0].translation)
+        if (userAnswerWord0 === words[0].translation) {
             correctAnswerCount++
         }
 
-        const userAnswerWord1 = prompt(words.word1.original)
-        alert(userAnswerWord1 === words.word1.translation)
-        if (userAnswerWord1 === words.word1.translation) {
+        const userAnswerWord1 = prompt(words[1].original)
+        alert(userAnswerWord1 === words[1].translation)
+        if (userAnswerWord1 === words[1].translation) {
             correctAnswerCount++
         }
 
-        const userAnswerWord2 = prompt(words.word2.original)
-        alert(userAnswerWord2 === words.word2.translation)
-        if (userAnswerWord2 === words.word2.translation) {
+        const userAnswerWord2 = prompt(words[2].original)
+        alert(userAnswerWord2 === words[2].translation)
+        if (userAnswerWord2 === words[2].translation) {
             correctAnswerCount++
         }
         const userCorrectPercent = correctAnswerCount / wordsCount * 100
         if (userCorrectPercent > settings.correctMinPecent) {
-            document.write(finishMessage.coolMessage)
+            document.write(finishMessage[0].coolMessage)
         }
         else {
-            document.write(finishMessage.NoCoolMessage)
+            document.write(finishMessage[0].NoCoolMessage)
         }  
     </script>
 
