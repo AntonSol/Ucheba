@@ -33,23 +33,12 @@
         }
         let correctAnswerCount = 0
         const wordsCount = 3
-
-        const userAnswerWord0 = prompt(words[0].original)
-        alert(userAnswerWord0 === words[0].translation)
-        if (userAnswerWord0 === words[0].translation) {
+        for(let i=0;i<words.length;i++){
+            const userAnswerWord = prompt(words[i].original)
+        alert(userAnswerWord === words[i].translation)
+        if (userAnswerWord === words[i].translation) {
             correctAnswerCount++
-        }
-
-        const userAnswerWord1 = prompt(words[1].original)
-        alert(userAnswerWord1 === words[1].translation)
-        if (userAnswerWord1 === words[1].translation) {
-            correctAnswerCount++
-        }
-
-        const userAnswerWord2 = prompt(words[2].original)
-        alert(userAnswerWord2 === words[2].translation)
-        if (userAnswerWord2 === words[2].translation) {
-            correctAnswerCount++
+        } 
         }
         const userCorrectPercent = correctAnswerCount / wordsCount * 100
         if (userCorrectPercent > settings.correctMinPecent) {
