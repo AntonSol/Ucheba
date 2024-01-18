@@ -1,8 +1,3 @@
-let accessAllowed
 let age =prompt('Skolko let?','')
-if (age>18){
-    accessAllowed=true
-} else {
-    accessAllowed=false
-}
+let accessAllowed=(age>18)? true:false
 alert (accessAllowed)
